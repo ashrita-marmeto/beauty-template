@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .font-outline-1 {
+      -webkit-text-stroke: 1px #DC3C71;
+    }
+  }
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-VariableFont_opsz\,wght.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: "Tanker";
+    src: url("../src/assets/fonts/Tanker-Regular.ttf");
 }
